@@ -8,7 +8,8 @@ export default function UserInfo(props) {
       <Text style={styles.label}>{props.label}</Text>
       <Text style={styles.value}>{props.value}</Text>
     </View>
-</View>      <View style={styles.content}>
+</View>      
+<View style={styles.content}>
      
      <Text>
        Grateful for the chance to explore, unwind, and create unforgettable moments that will be cherished forever.
@@ -18,7 +19,8 @@ export default function UserInfo(props) {
        source={require('./vacation.png')}
        style={styles.image}
      />
-   </View></View>
+   </View>
+   </View>
    
   );
 }
@@ -41,7 +43,7 @@ const styles = StyleSheet.create({
   },
   content: {
     flexDirection: 'column',
-   
+    paddingHorizontal: -20,
     paddingLeft: 2,
     paddingRight: 2,
   },
